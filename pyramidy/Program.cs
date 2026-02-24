@@ -21,7 +21,7 @@ for (i = pocet; i >= 1; i--)
 }
 
 
-
+mezera = pocet - i;
 for (i = 1; i <= pocet; i++)
 {
     for (int j = 0; j < mezera; j++)
@@ -30,7 +30,8 @@ for (i = 1; i <= pocet; i++)
     }
     Console.Write(new string('*', i));
     await Task.Delay(500);
-    mezera = pocet - 1;
+    mezera = pocet - i;
+    Console.WriteLine();
 }
 Console.WriteLine();
 await Task.Delay(1500);
