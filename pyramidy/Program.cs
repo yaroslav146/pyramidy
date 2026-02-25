@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 int i;
 
 Console.WriteLine("-----Pyramidy---- -");
@@ -19,6 +19,7 @@ for (i = pocet; i >= 1; i--)
     await Task.Delay(500);
 }
 Console.WriteLine();
+await Task.Delay(1500);
 
 for (i = 1; i <= pocet; i++)
 {
