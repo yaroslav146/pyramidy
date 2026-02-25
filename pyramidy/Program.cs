@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-int mezera = 0;
 int i;
 
 Console.WriteLine("-----Pyramidy---- -");
@@ -13,30 +12,28 @@ for (i = 1; i <= pocet; i++)
     await Task.Delay(500);
 }
 Console.WriteLine();
-await Task.Delay(1500);
+await Task.Delay(1000);
 for (i = pocet; i >= 1; i--)
 {
     Console.WriteLine(new string('*', i));
     await Task.Delay(500);
 }
+Console.WriteLine();
 
-
-mezera = pocet - i;
 for (i = 1; i <= pocet; i++)
 {
-    for (int j = 0; j < mezera; j++)
-    {
-        Console.Write(" ");
-    }
-    Console.Write(new string('*', i));
+    int mezera = pocet - i;
+    Console.Write(new string(' ', mezera));
+    Console.WriteLine(new string('*', i));
     await Task.Delay(500);
-    mezera = pocet - i;
-    Console.WriteLine();
 }
 Console.WriteLine();
-await Task.Delay(1500);
+await Task.Delay(1000);
+
 for (i = pocet; i >= 1; i--)
 {
-    Console.Write(new string('*', i));
+    int mezera = pocet - i;
+    Console.Write(new string(' ', mezera));
+    Console.WriteLine(new string('*', i));
     await Task.Delay(500);
 }
