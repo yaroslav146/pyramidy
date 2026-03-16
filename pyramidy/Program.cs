@@ -44,13 +44,14 @@ Console.WriteLine();
 
 
 
-mezera = mezera - 1;
+mezera = mezera / 2;
 for (i = 1; i <= pocet; i = i+2)
 {
-    mezera--;
+    
     Console.Write(new string(' ', mezera));
     Console.WriteLine(new string('*', i));
     await Task.Delay(250);
+    mezera--;
 }
 Console.WriteLine();
 await Task.Delay(500);
@@ -61,9 +62,9 @@ if (pocet % 2 == 0)
 }
 for (i = pocet; i >= 1; i= i-2)
 {
-    
+    mezera++;
     Console.Write(new string(' ', mezera));
     Console.WriteLine(new string('*', i));
-    mezera++;
+    
     await Task.Delay(250);
 }
