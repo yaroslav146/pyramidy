@@ -1,0 +1,1 @@
+Program v C# podle zadaného počtu řádků vykresluje pomocí znaku * několik různých obrazců – rostoucí a klesající trojúhelníky, zarovnané trojúhelníky a kosočtverec. Pro jejich vytvoření využívá for cykly, podmínku if, mezery a liché počty hvězdiček.
